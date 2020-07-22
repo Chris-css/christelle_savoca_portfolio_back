@@ -1,0 +1,9 @@
+# Dependency directories
+/node_modules
+
+#env
+.env
+.env.test
+
+#VSCode
+.vscode/
