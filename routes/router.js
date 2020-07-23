@@ -1,7 +1,9 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-const developpers = require('./developpers');
-router.use('/developpers', developpers);
+const developpers = require("./developpers");
+const stacks = require("./stacks");
+router.use("/developpers", developpers);
+router.use("/stacks", stacks);
 
 module.exports = router;

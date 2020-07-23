@@ -1,8 +1,8 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const api = require('./routes/router');
+const api = require("./routes/router");
 const bodyParser = require("body-parser");
-const cors = require('cors');
+const cors = require("cors");
 const port = 5000;
 
 app.use(cors());
@@ -13,7 +13,7 @@ app.use("/api", api);
 
 app.listen(port, (err) => {
     if (err) {
-        throw new Error('There is an error');
+        throw new Error("There is an error");
     }
     console.log(`Port ${port}`);
 });
